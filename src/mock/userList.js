@@ -19,7 +19,7 @@ const userList = {
       },
       {
         username: 'editor',
-        password: '123456',
+        password: '12346',
         roles: 'editor',
         name: '测试1',
         'age|20-30': 23,
