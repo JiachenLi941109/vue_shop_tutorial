@@ -21,3 +21,17 @@ configArray.forEach(item => {
     Mock.mock(new RegExp('^' + protocol[1]), protocol[0], target)
   }
 })
+
+Mock.mock(/menus/, 'get', {
+  data: [
+    {
+      id: 103,
+      authName: '权限管理',
+      path: 'rights'
+    }
+  ],
+  meta: {
+    msg: '获取菜单列表成功',
+    status: 200
+  }
+})
